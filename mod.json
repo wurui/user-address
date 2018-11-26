@@ -2,12 +2,18 @@
   "RULE_VERSION":"20180724",
   "name": "user-address",
   "apiDependencies": [
-  {
-    "name": "user-address"
-  },
-  {
-    "name": "user-select"
-  }
-]
+	  {
+	    "name": "user-address",
+	    "LINK":[
+	    	{
+	    		"name":"edit",
+	    		"title":"编辑"
+	    	}
+	    ]
+	  },
+	  {
+	    "name": "user-select"
+	  }
+	]
 }
 

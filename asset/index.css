@@ -1,3 +1,1 @@
-.oxmod-user-address{
-/* CSS */
- }
+.oxmod-user-address a{color:inherit}.oxmod-user-address .addresslist{color:#555;padding:10px}.oxmod-user-address .addresslist li{padding:0 45px 15px 0}.oxmod-user-address .name{font-size:16px;color:#333}.oxmod-user-address .phone{font-size:12px;color:#999;padding-left:12px}.oxmod-user-address .detail{font-size:12px;color:#333}.oxmod-user-address .detail>span{padding-right:5px}.oxmod-user-address .tag{background-color:#ececec;font-size:11px;color:#888;padding:2px 5px;margin-right:5px}.oxmod-user-address .right-op{float:right;margin-right:-45px;border-left:solid .5px #f8f8f8;text-align:center;font-size:12px;color:#999;width:40px;height:30px;line-height:30px}.oxmod-user-address .bt-add{text-align:center;line-height:40px;color:#999}.oxmod-user-address .bt-add:before{content:'+\20';font-weight:700;color:#ccc;font-size:20px}
