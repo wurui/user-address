@@ -1,7 +1,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:oxm="https://www.openxsl.com">
     <xsl:template match="/root" name="wurui.user-address">
         <!-- className 'J_OXMod' required  -->
-        <div class="J_OXMod oxmod-user-address" ox-mod="user-address">
+        <div class="J_OXMod oxmod-user-address" ox-mod="user-address" data-ts="{/root/attribute::ts_r}">
             <xsl:variable select="data/user-address/i" name="addressbook" />
 
             <xsl:variable name="selected_addr_id" select="data/user-select/i[type='user-address']/selected"/>
@@ -33,9 +33,6 @@
                     </li>
                 </xsl:for-each>
             </ul>
-            <button class="J_Refresh">Refresh</button>
-            <a href="nodata.xml">GOGOGOO</a>
-            <div id="log"></div>
 
         </div>
     </xsl:template>

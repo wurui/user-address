@@ -1,26 +1,15 @@
 define([],function(){
   return {
     init:function($mod){
-    	var ts=new Date();
+    	var ts=$mod.attr('data-ts');
+		//console.log(ts);    	
+		if((new Date()).getTime()-ts>5000){
+			//这里主要是解决页面回退的问题，回退后数据源没有刷新，时间戳是老的
+			//数据老于5秒，5秒间可能在其它页面完成一次数据操作，就刷新之
+			
+			$mod.OXRefresh()
+		}
     	
-    	var log=function(s){
-    		$('#log').html(s+''+(new Date).getTime())
-    	}
-    	$mod.on('click','.J_Refresh',function(){
-
-    		$mod.OXRefresh()
-    	})
-    	window.addEventListener('pageshow',function(){
-    		
-    		var now=new Date();
-    		log('pageshow')
-    		if(now-ts>2000){
-    			log('exec')
-    			ts=now;
-    			$mod.OXRefresh()
-    		}
-
-    	})
-    }
+   	}
   }
 })
