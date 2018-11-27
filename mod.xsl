@@ -6,7 +6,7 @@
 
             <xsl:variable name="selected_addr_id" select="data/user-select/i[type='user-address']/selected"/>
 
-            <ul class="addresslist">
+            <ul class="addresslist" ox-refresh="html">
                 
                 <xsl:for-each select="data/user-address/i">
                     <li>
