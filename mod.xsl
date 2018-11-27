@@ -33,7 +33,7 @@
                     </li>
                 </xsl:for-each>
             </ul>
-            <button id="Refresh">Refresh</button>
+            <button class="J_Refresh">Refresh</button>
 
         </div>
     </xsl:template>

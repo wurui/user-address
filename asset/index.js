@@ -3,7 +3,8 @@ define([],function(){
     init:function($mod){
     	var ts=new Date();
     	
-    	$('#Refresh').on('click',function(){
+    	$mod.on('click','.J_Refresh',function(){
+
     		$mod.OXRefresh()
     	})
     	window.addEventListener('pageshow',function(){
