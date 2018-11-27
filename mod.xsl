@@ -34,6 +34,8 @@
                 </xsl:for-each>
             </ul>
             <button class="J_Refresh">Refresh</button>
+            <a href="nodata.xml">GOGOGOO</a>
+            <div id="log"></div>
 
         </div>
     </xsl:template>
